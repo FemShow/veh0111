@@ -1,0 +1,122 @@
+{
+  "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+  "title": "All registered vehicles in Great Britain; from 1994 Quarter 4 (end December)",
+  "description": "Vehicles by the number of changes of keeper during the year in the United Kingdom from 2010",
+  "creator": "https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency",
+  "publisher": "https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency",
+  "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "keywords": [
+    "cars",
+    "buses",
+    "coach",
+    "coaches",
+    "vans",
+    "lorries",
+    "motorcycles",
+    "licence",
+    "license",
+    "licensing"
+  ],
+  "columns": {
+    "Geography": false,
+    "Code": {
+      "from_template": "statistical-geography"
+    },
+    "Date": {
+      "from_template": "government-year"
+    },
+    "Units": false,
+    "Metric": false,
+    "Cars": {
+      "type": "observations",
+      "data_type": "float",
+      "measure": {
+        "label": "Cars",
+        "description": "The total number of changes of Car keepers during the year",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "unit": {
+        "label": "float",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    },
+    "Mcycles": {
+      "type": "observations",
+      "data_type": "float",
+      "measure": {
+        "label": "Mcycles",
+        "description": "The number of changes of motorcycle keepers during the year",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "unit": {
+        "label": "float",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    },
+    "LGVs": {
+      "type": "observations",
+      "data_type": "float",
+      "measure": {
+        "label": "LGVs",
+        "description": "The number of changes of LGV keepers during the year",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "unit": {
+        "label": "float",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    },
+    "HGVs": {
+      "type": "observations",
+      "data_type": "float",
+      "measure": {
+        "label": "HGVs",
+        "description": "The number of changes of HGV keepers during the year",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "unit": {
+        "label": "float",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    },
+    "Bus-n-coach": {
+      "type": "observations",
+      "data_type": "float",
+      "measure": {
+        "label": "Bus-n-coach",
+        "description": "The number of changes of bus and coach keepers during the year",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "unit": {
+        "label": "float",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    },
+    "Others": {
+      "type": "observations",
+      "data_type": "float",
+      "measure": {
+        "label": "Others",
+        "description": "The number of changes of other vehicle type keepers during the year",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "unit": {
+        "label": "float",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    },
+    "Total": {
+      "type": "observations",
+      "data_type": "float",
+      "measure": {
+        "label": "Total",
+        "description": "Total version by the number of changes of keeper during the year",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "unit": {
+        "label": "float",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    }
+  }
+}

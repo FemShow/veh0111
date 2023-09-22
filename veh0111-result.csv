@@ -1,0 +1,92 @@
+Geography,Code,Date,Units,Metric,Cars,Mcycles,LGVs,HGVs,Bus-n-coach,Others,Total
+United Kingdom,K02000001.,2010,Thousands,Total changes of keeper,7651.27,718.54,856.76,97.09,38.06,99.91,9461.63
+United Kingdom,K02000001.,2011,Thousands,Total changes of keeper,7406.98,605.69,839.21,86.13,35.3,96.3,9069.6
+United Kingdom,K02000001.,2012,Thousands,Total changes of keeper,7699.21,483.19,832.87,115.27,32.44,82.97,9245.95
+United Kingdom,K02000001.,2013,Thousands,Total changes of keeper,7114.26,397.76,735.16,58.73,28.69,60.59,8395.18
+United Kingdom,K02000001.,2014,Thousands,Total changes of keeper,6799.37,380.6,714.7,52.92,23.84,57.15,8028.58
+United Kingdom,K02000001.,2015,Thousands,Total changes of keeper,7734.13,485.43,845.82,65.02,25.44,79.45,9235.28
+United Kingdom,K02000001.,2016,Thousands,Total changes of keeper,7709.01,472.7,851.3,63.36,24.21,76.17,9196.75
+United Kingdom,K02000001.,2017,Thousands,Total changes of keeper,7740.38,486.69,893.02,64.42,24.33,79.02,9287.86
+United Kingdom,K02000001.,2018,Thousands,Total changes of keeper,7521.04,471.45,902.08,69.7,23.72,79.86,9067.86
+United Kingdom,K02000001.,2019,Thousands,Total changes of keeper,7551.08,472.24,925.0,69.0,23.64,80.84,9121.81
+United Kingdom,K02000001.,2020,Thousands,Total changes of keeper,6563.43,480.01,932.31,69.92,21.85,83.04,8150.56
+United Kingdom,K02000001.,2021,Thousands,Total changes of keeper,7196.31,520.34,927.47,75.66,23.1,85.43,8828.3
+United Kingdom,K02000001.,2022,Thousands,Total changes of keeper,6508.85,504.6,883.77,74.43,20.38,81.2,8073.23
+United Kingdom,K02000001.,2010,Thousands,Vehicles with 0 changes,25175.24,1576.99,3004.49,530.29,174.18,648.76,31109.95
+United Kingdom,K02000001.,2011,Thousands,Vehicles with 0 changes,27206.08,2045.03,3347.1,571.52,189.88,678.19,34037.8
+United Kingdom,K02000001.,2012,Thousands,Vehicles with 0 changes,26369.93,1670.74,3194.93,532.8,176.29,745.23,32689.92
+United Kingdom,K02000001.,2013,Thousands,Vehicles with 0 changes,26723.23,1783.57,3290.58,545.16,174.6,826.56,33343.7
+United Kingdom,K02000001.,2014,Thousands,Vehicles with 0 changes,28682.99,1791.72,3510.87,551.16,178.83,791.49,35507.04
+United Kingdom,K02000001.,2015,Thousands,Vehicles with 0 changes,30069.33,1842.89,3754.66,593.72,186.42,832.57,37279.61
+United Kingdom,K02000001.,2016,Thousands,Vehicles with 0 changes,31275.52,1951.2,3992.88,622.86,190.29,861.22,38893.98
+United Kingdom,K02000001.,2017,Thousands,Vehicles with 0 changes,32249.83,2046.61,4195.06,652.59,192.8,912.38,40249.28
+United Kingdom,K02000001.,2018,Thousands,Vehicles with 0 changes,32930.71,2127.61,4375.18,670.33,193.45,944.7,41241.98
+United Kingdom,K02000001.,2019,Thousands,Vehicles with 0 changes,33422.09,2202.64,4539.36,696.94,193.89,975.9,42030.81
+United Kingdom,K02000001.,2020,Thousands,Vehicles with 0 changes,34231.41,2279.08,4680.05,703.8,192.78,991.21,43078.33
+United Kingdom,K02000001.,2021,Thousands,Vehicles with 0 changes,34202.99,2342.69,4922.34,721.27,190.85,1021.43,43401.57
+United Kingdom,K02000001.,2022,Thousands,Vehicles with 0 changes,34777.05,2444.67,5087.77,747.07,192.33,1058.13,44307.01
+United Kingdom,K02000001.,2010,Thousands,Vehicles with 1 changes,5508.85,318.04,591.86,64.14,25.05,59.86,6567.8
+United Kingdom,K02000001.,2011,Thousands,Vehicles with 1 changes,5503.02,313.58,599.29,61.71,24.32,60.39,6562.32
+United Kingdom,K02000001.,2012,Thousands,Vehicles with 1 changes,5674.28,311.32,592.68,60.06,23.79,59.88,6722.01
+United Kingdom,K02000001.,2013,Thousands,Vehicles with 1 changes,5505.43,265.11,550.32,49.35,22.34,48.01,6440.55
+United Kingdom,K02000001.,2014,Thousands,Vehicles with 1 changes,5351.63,257.46,544.47,45.17,18.68,46.8,6264.21
+United Kingdom,K02000001.,2015,Thousands,Vehicles with 1 changes,6026.56,321.27,639.43,55.36,20.19,63.64,7126.46
+United Kingdom,K02000001.,2016,Thousands,Vehicles with 1 changes,6003.61,314.78,649.14,54.65,19.64,61.56,7103.38
+United Kingdom,K02000001.,2017,Thousands,Vehicles with 1 changes,6030.96,323.83,680.18,55.2,19.45,63.58,7173.19
+United Kingdom,K02000001.,2018,Thousands,Vehicles with 1 changes,5834.93,315.26,678.62,58.71,18.84,64.99,6971.35
+United Kingdom,K02000001.,2019,Thousands,Vehicles with 1 changes,5821.17,311.86,694.25,58.74,18.44,64.89,6969.35
+United Kingdom,K02000001.,2020,Thousands,Vehicles with 1 changes,4995.37,302.51,680.51,59.48,17.08,65.28,6120.23
+United Kingdom,K02000001.,2021,Thousands,Vehicles with 1 changes,5425.93,329.51,673.05,62.32,17.78,66.97,6575.57
+United Kingdom,K02000001.,2022,Thousands,Vehicles with 1 changes,4877.83,325.06,655.99,63.78,15.81,64.58,6003.05
+United Kingdom,K02000001.,2010,Thousands,Vehicles with 2 changes,799.72,74.8,97.34,9.5,3.8,11.14,996.3
+United Kingdom,K02000001.,2011,Thousands,Vehicles with 2 changes,736.06,68.7,92.31,7.77,3.62,10.1,918.56
+United Kingdom,K02000001.,2012,Thousands,Vehicles with 2 changes,745.78,61.26,87.62,6.41,3.31,6.85,911.24
+United Kingdom,K02000001.,2013,Thousands,Vehicles with 2 changes,649.89,47.2,74.24,4.15,2.65,4.77,782.9
+United Kingdom,K02000001.,2014,Thousands,Vehicles with 2 changes,588.27,46.77,69.12,3.53,2.22,4.22,714.14
+United Kingdom,K02000001.,2015,Thousands,Vehicles with 2 changes,677.49,61.01,82.45,4.33,2.23,6.53,834.04
+United Kingdom,K02000001.,2016,Thousands,Vehicles with 2 changes,672.54,58.71,80.83,3.9,1.97,5.98,823.94
+United Kingdom,K02000001.,2017,Thousands,Vehicles with 2 changes,671.92,59.87,84.16,4.16,2.05,6.4,828.56
+United Kingdom,K02000001.,2018,Thousands,Vehicles with 2 changes,657.88,57.2,88.0,4.89,2.06,6.26,816.29
+United Kingdom,K02000001.,2019,Thousands,Vehicles with 2 changes,662.8,57.16,89.56,4.63,2.11,6.61,822.87
+United Kingdom,K02000001.,2020,Thousands,Vehicles with 2 changes,583.69,60.96,95.41,4.66,1.94,7.06,753.72
+United Kingdom,K02000001.,2021,Thousands,Vehicles with 2 changes,665.99,66.51,97.12,5.86,2.16,7.54,845.18
+United Kingdom,K02000001.,2022,Thousands,Vehicles with 2 changes,607.85,62.42,87.25,4.73,1.87,6.78,770.91
+United Kingdom,K02000001.,2010,Thousands,Vehicles with 3 changes,124.55,22.86,15.62,2.23,0.69,3.19,169.14
+United Kingdom,K02000001.,2011,Thousands,Vehicles with 3 changes,102.96,17.5,13.44,1.52,0.54,2.76,138.72
+United Kingdom,K02000001.,2012,Thousands,Vehicles with 3 changes,113.36,11.45,13.78,0.73,0.37,0.89,140.58
+United Kingdom,K02000001.,2013,Thousands,Vehicles with 3 changes,82.82,8.33,9.78,0.29,0.27,0.7,102.19
+United Kingdom,K02000001.,2014,Thousands,Vehicles with 3 changes,73.19,7.78,8.84,0.2,0.2,0.5,90.71
+United Kingdom,K02000001.,2015,Thousands,Vehicles with 3 changes,93.04,10.72,11.19,0.3,0.23,0.72,116.21
+United Kingdom,K02000001.,2016,Thousands,Vehicles with 3 changes,94.41,10.3,10.97,0.27,0.19,0.71,116.85
+United Kingdom,K02000001.,2017,Thousands,Vehicles with 3 changes,94.74,10.83,11.88,0.28,0.21,0.7,118.64
+United Kingdom,K02000001.,2018,Thousands,Vehicles with 3 changes,94.18,10.29,12.6,0.37,0.22,0.63,118.3
+United Kingdom,K02000001.,2019,Thousands,Vehicles with 3 changes,100.4,11.02,13.43,0.3,0.26,0.72,126.12
+United Kingdom,K02000001.,2020,Thousands,Vehicles with 3 changes,96.98,12.79,15.44,0.33,0.24,0.9,126.69
+United Kingdom,K02000001.,2021,Thousands,Vehicles with 3 changes,105.67,13.36,15.26,0.48,0.26,0.88,135.9
+United Kingdom,K02000001.,2022,Thousands,Vehicles with 3 changes,98.55,12.45,13.43,0.35,0.22,0.8,125.8
+United Kingdom,K02000001.,2010,Thousands,Vehicles with 4 changes,24.08,11.17,3.05,0.83,0.26,1.02,40.42
+United Kingdom,K02000001.,2011,Thousands,Vehicles with 4 changes,18.2,6.94,2.11,0.51,0.17,0.9,28.81
+United Kingdom,K02000001.,2012,Thousands,Vehicles with 4 changes,23.96,2.34,2.84,0.17,0.06,0.2,29.56
+United Kingdom,K02000001.,2013,Thousands,Vehicles with 4 changes,12.04,1.64,1.41,0.03,0.04,0.16,15.31
+United Kingdom,K02000001.,2014,Thousands,Vehicles with 4 changes,10.5,1.22,1.09,0.02,0.02,0.08,12.93
+United Kingdom,K02000001.,2015,Thousands,Vehicles with 4 changes,14.7,1.97,1.61,0.02,0.02,0.11,18.42
+United Kingdom,K02000001.,2016,Thousands,Vehicles with 4 changes,15.35,1.91,1.56,0.02,0.01,0.09,18.94
+United Kingdom,K02000001.,2017,Thousands,Vehicles with 4 changes,15.88,2.01,1.8,0.01,0.03,0.11,19.84
+United Kingdom,K02000001.,2018,Thousands,Vehicles with 4 changes,16.74,2.03,1.93,0.02,0.03,0.09,20.84
+United Kingdom,K02000001.,2019,Thousands,Vehicles with 4 changes,19.03,2.33,2.24,0.02,0.04,0.11,23.77
+United Kingdom,K02000001.,2020,Thousands,Vehicles with 4 changes,19.7,3.01,2.9,0.02,0.03,0.17,25.82
+United Kingdom,K02000001.,2021,Thousands,Vehicles with 4 changes,21.53,3.07,2.75,0.03,0.04,0.13,27.56
+United Kingdom,K02000001.,2022,Thousands,Vehicles with 4 changes,20.85,2.99,2.4,0.03,0.04,0.12,26.42
+United Kingdom,K02000001.,2010,Thousands,Vehicles with over 4 changes,12.1,20.3,1.69,0.68,0.37,0.68,35.82
+United Kingdom,K02000001.,2011,Thousands,Vehicles with over 4 changes,8.3,10.92,1.03,0.4,0.23,0.65,21.52
+United Kingdom,K02000001.,2012,Thousands,Vehicles with over 4 changes,15.83,0.93,1.92,0.79,0.05,0.19,19.7
+United Kingdom,K02000001.,2013,Thousands,Vehicles with over 4 changes,2.35,0.98,0.25,0.02,0.02,0.05,3.67
+United Kingdom,K02000001.,2014,Thousands,Vehicles with over 4 changes,1.85,0.27,0.2,0.0,0.01,0.01,2.34
+United Kingdom,K02000001.,2015,Thousands,Vehicles with over 4 changes,2.81,0.4,0.29,0.0,0.0,0.02,3.53
+United Kingdom,K02000001.,2016,Thousands,Vehicles with over 4 changes,3.01,0.38,0.26,0.0,0.0,0.02,3.68
+United Kingdom,K02000001.,2017,Thousands,Vehicles with over 4 changes,3.42,0.5,0.33,0.0,0.01,0.02,4.27
+United Kingdom,K02000001.,2018,Thousands,Vehicles with over 4 changes,3.97,0.53,0.37,0.0,0.0,0.02,4.9
+United Kingdom,K02000001.,2019,Thousands,Vehicles with over 4 changes,5.11,0.71,0.46,0.0,0.0,0.02,6.31
+United Kingdom,K02000001.,2020,Thousands,Vehicles with over 4 changes,5.83,0.97,0.59,0.0,0.01,0.05,7.44
+United Kingdom,K02000001.,2021,Thousands,Vehicles with over 4 changes,6.61,1.02,0.65,0.0,0.01,0.04,8.33
+United Kingdom,K02000001.,2022,Thousands,Vehicles with over 4 changes,6.77,1.01,0.64,0.0,0.0,0.03,8.46

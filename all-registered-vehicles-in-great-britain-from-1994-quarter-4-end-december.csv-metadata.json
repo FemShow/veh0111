@@ -1,0 +1,1306 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dataset",
+    "tables": [
+        {
+            "url": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "titles": "Geography",
+                        "name": "geography",
+                        "suppressOutput": true
+                    },
+                    {
+                        "titles": "Code",
+                        "name": "code",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+code}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Date",
+                        "name": "date",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year",
+                        "valueUrl": "government-year.csv#{+date}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Units",
+                        "name": "units",
+                        "suppressOutput": true
+                    },
+                    {
+                        "titles": "Metric",
+                        "name": "metric",
+                        "suppressOutput": true
+                    },
+                    {
+                        "titles": "Cars",
+                        "name": "cars",
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@cars",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/cars",
+                        "datatype": "float",
+                        "required": true
+                    },
+                    {
+                        "titles": "Mcycles",
+                        "name": "mcycles",
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@mcycles",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/mcycles",
+                        "datatype": "float",
+                        "required": true
+                    },
+                    {
+                        "titles": "LGVs",
+                        "name": "lgvs",
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@lgvs",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/lgvs",
+                        "datatype": "float",
+                        "required": true
+                    },
+                    {
+                        "titles": "HGVs",
+                        "name": "hgvs",
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@hgvs",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/hgvs",
+                        "datatype": "float",
+                        "required": true
+                    },
+                    {
+                        "titles": "Bus-n-coach",
+                        "name": "bus_n_coach",
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@bus-n-coach",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/bus-n-coach",
+                        "datatype": "float",
+                        "required": true
+                    },
+                    {
+                        "titles": "Others",
+                        "name": "others",
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@others",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/others",
+                        "datatype": "float",
+                        "required": true
+                    },
+                    {
+                        "titles": "Total",
+                        "name": "total",
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@total",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/total",
+                        "datatype": "float",
+                        "required": true
+                    },
+                    {
+                        "name": "virt_slice",
+                        "virtual": true,
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Slice"
+                    },
+                    {
+                        "name": "virt_slice_structure",
+                        "virtual": true,
+                        "propertyUrl": "qb:sliceStructure",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#slice/cross-measures"
+                    },
+                    {
+                        "name": "virt_obs_cars",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@cars"
+                    },
+                    {
+                        "name": "virt_obs_cars_meas",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@cars",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/cars"
+                    },
+                    {
+                        "name": "virt_obs_cars_unit",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@cars",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#unit/float"
+                    },
+                    {
+                        "name": "virt_dim_cars_code",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@cars",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+code}"
+                    },
+                    {
+                        "name": "virt_dim_cars_date",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@cars",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year",
+                        "valueUrl": "government-year.csv#{+date}"
+                    },
+                    {
+                        "name": "virt_obs_cars_type",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@cars",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_cars",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@cars",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_mcycles",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@mcycles"
+                    },
+                    {
+                        "name": "virt_obs_mcycles_meas",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@mcycles",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/mcycles"
+                    },
+                    {
+                        "name": "virt_obs_mcycles_unit",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@mcycles",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#unit/float"
+                    },
+                    {
+                        "name": "virt_dim_mcycles_code",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@mcycles",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+code}"
+                    },
+                    {
+                        "name": "virt_dim_mcycles_date",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@mcycles",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year",
+                        "valueUrl": "government-year.csv#{+date}"
+                    },
+                    {
+                        "name": "virt_obs_mcycles_type",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@mcycles",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_mcycles",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@mcycles",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_lgvs",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@lgvs"
+                    },
+                    {
+                        "name": "virt_obs_lgvs_meas",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@lgvs",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/lgvs"
+                    },
+                    {
+                        "name": "virt_obs_lgvs_unit",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@lgvs",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#unit/float"
+                    },
+                    {
+                        "name": "virt_dim_lgvs_code",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@lgvs",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+code}"
+                    },
+                    {
+                        "name": "virt_dim_lgvs_date",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@lgvs",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year",
+                        "valueUrl": "government-year.csv#{+date}"
+                    },
+                    {
+                        "name": "virt_obs_lgvs_type",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@lgvs",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_lgvs",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@lgvs",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_hgvs",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@hgvs"
+                    },
+                    {
+                        "name": "virt_obs_hgvs_meas",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@hgvs",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/hgvs"
+                    },
+                    {
+                        "name": "virt_obs_hgvs_unit",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@hgvs",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#unit/float"
+                    },
+                    {
+                        "name": "virt_dim_hgvs_code",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@hgvs",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+code}"
+                    },
+                    {
+                        "name": "virt_dim_hgvs_date",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@hgvs",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year",
+                        "valueUrl": "government-year.csv#{+date}"
+                    },
+                    {
+                        "name": "virt_obs_hgvs_type",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@hgvs",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_hgvs",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@hgvs",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_bus_n_coach",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@bus-n-coach"
+                    },
+                    {
+                        "name": "virt_obs_bus_n_coach_meas",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@bus-n-coach",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/bus-n-coach"
+                    },
+                    {
+                        "name": "virt_obs_bus_n_coach_unit",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@bus-n-coach",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#unit/float"
+                    },
+                    {
+                        "name": "virt_dim_bus_n_coach_code",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@bus-n-coach",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+code}"
+                    },
+                    {
+                        "name": "virt_dim_bus_n_coach_date",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@bus-n-coach",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year",
+                        "valueUrl": "government-year.csv#{+date}"
+                    },
+                    {
+                        "name": "virt_obs_bus_n_coach_type",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@bus-n-coach",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_bus_n_coach",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@bus-n-coach",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_others",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@others"
+                    },
+                    {
+                        "name": "virt_obs_others_meas",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@others",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/others"
+                    },
+                    {
+                        "name": "virt_obs_others_unit",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@others",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#unit/float"
+                    },
+                    {
+                        "name": "virt_dim_others_code",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@others",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+code}"
+                    },
+                    {
+                        "name": "virt_dim_others_date",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@others",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year",
+                        "valueUrl": "government-year.csv#{+date}"
+                    },
+                    {
+                        "name": "virt_obs_others_type",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@others",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_others",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@others",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_total",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@total"
+                    },
+                    {
+                        "name": "virt_obs_total_meas",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@total",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/total"
+                    },
+                    {
+                        "name": "virt_obs_total_unit",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@total",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#unit/float"
+                    },
+                    {
+                        "name": "virt_dim_total_code",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@total",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+code}"
+                    },
+                    {
+                        "name": "virt_dim_total_date",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@total",
+                        "propertyUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year",
+                        "valueUrl": "government-year.csv#{+date}"
+                    },
+                    {
+                        "name": "virt_obs_total_type",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@total",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_total",
+                        "virtual": true,
+                        "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#obs/{code},{date}@total",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dataset"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": "date",
+                        "reference": {
+                            "resource": "government-year.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "code",
+                    "date"
+                ],
+                "aboutUrl": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#slice/{code},{date}"
+            }
+        },
+        {
+            "url": "government-year.csv",
+            "tableSchema": "government-year.table.json",
+            "suppressOutput": true
+        }
+    ],
+    "rdfs:seeAlso": [
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/government-year",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 2
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#structure",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#DataStructureDefinition",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#component": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/unit"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/mcycles"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/measure-type"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/lgvs"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/total"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/cars"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/others"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/bus-n-coach"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/hgvs"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/statistical-geography"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/government-year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/bus-n-coach"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/lgvs"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/hgvs"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/cars"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/others"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/total"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/mcycles"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#sliceKey": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#slice/cross-measures"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/statistical-geography",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 1
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/mcycles",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "The number of changes of motorcycle keepers during the year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Mcycles"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#float"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#scale"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dataset",
+            "@type": [
+                "http://purl.org/linked-data/cube#Attachable",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/ns/dcat#Dataset",
+                "http://www.w3.org/ns/dcat#Resource",
+                "http://purl.org/linked-data/cube#DataSet"
+            ],
+            "http://purl.org/dc/terms/creator": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency"
+                }
+            ],
+            "http://purl.org/dc/terms/description": [
+                {
+                    "@type": "https://www.w3.org/ns/iana/media-types/text/markdown#Resource",
+                    "@value": "Vehicles by the number of changes of keeper during the year in the United Kingdom from 2010"
+                }
+            ],
+            "http://purl.org/dc/terms/identifier": [
+                {
+                    "@value": "All registered vehicles in Great Britain; from 1994 Quarter 4 (end December)"
+                }
+            ],
+            "http://purl.org/dc/terms/issued": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-09-22T15:28:55.054262"
+                }
+            ],
+            "http://purl.org/dc/terms/license": [
+                {
+                    "@id": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                }
+            ],
+            "http://purl.org/dc/terms/modified": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-09-22T15:28:55.054262"
+                }
+            ],
+            "http://purl.org/dc/terms/publisher": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency"
+                }
+            ],
+            "http://purl.org/dc/terms/title": [
+                {
+                    "@language": "en",
+                    "@value": "All registered vehicles in Great Britain; from 1994 Quarter 4 (end December)"
+                }
+            ],
+            "http://purl.org/linked-data/cube#structure": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#structure"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "All registered vehicles in Great Britain; from 1994 Quarter 4 (end December)"
+                }
+            ],
+            "http://www.w3.org/ns/dcat#keyword": [
+                {
+                    "@language": "en",
+                    "@value": "cars"
+                },
+                {
+                    "@language": "en",
+                    "@value": "motorcycles"
+                },
+                {
+                    "@language": "en",
+                    "@value": "license"
+                },
+                {
+                    "@language": "en",
+                    "@value": "coaches"
+                },
+                {
+                    "@language": "en",
+                    "@value": "buses"
+                },
+                {
+                    "@language": "en",
+                    "@value": "licence"
+                },
+                {
+                    "@language": "en",
+                    "@value": "coach"
+                },
+                {
+                    "@language": "en",
+                    "@value": "lorries"
+                },
+                {
+                    "@language": "en",
+                    "@value": "vans"
+                },
+                {
+                    "@language": "en",
+                    "@value": "licensing"
+                }
+            ],
+            "http://www.w3.org/ns/prov#wasGeneratedBy": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#csvcubed-build-activity"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/bus-n-coach",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "The number of changes of bus and coach keepers during the year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Bus-n-coach"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#float"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#scale"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/cars",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "The total number of changes of Car keepers during the year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Cars"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#float"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#scale"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#csvcubed-build-activity",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/ns/prov#Activity"
+            ],
+            "http://www.w3.org/ns/prov#used": [
+                {
+                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.4.4"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#class/government-year",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/lgvs",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "The number of changes of LGV keepers during the year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "LGVs"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#float"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#scale"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/lgvs",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/lgvs"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/lgvs"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 9
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Statistical Geography"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#class/statistical-geography"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/cars",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/cars"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/cars"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 5
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/total",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Total version by the number of changes of keeper during the year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Total"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#float"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#scale"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/unit",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": true
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 4
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "government-year.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Government Year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#class/government-year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/others",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "The number of changes of other vehicle type keepers during the year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Others"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#float"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#scale"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/hgvs",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "The number of changes of HGV keepers during the year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "HGVs"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#float"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#scale"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/total",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/total"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/total"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 17
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#slice/cross-measures",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#SliceKey",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/statistical-geography"
+                },
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dimension/government-year"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/hgvs",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/hgvs"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/hgvs"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 11
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#class/statistical-geography",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/mcycles",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/mcycles"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/mcycles"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 7
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/bus-n-coach",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/bus-n-coach"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/bus-n-coach"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 13
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/measure-type",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 12
+                },
+                {
+                    "@value": 14
+                },
+                {
+                    "@value": 16
+                },
+                {
+                    "@value": 8
+                },
+                {
+                    "@value": 6
+                },
+                {
+                    "@value": 10
+                },
+                {
+                    "@value": 3
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#component/others",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/others"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#measure/others"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 15
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#dependency/government-year",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./government-year.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "government-year.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "all-registered-vehicles-in-great-britain-from-1994-quarter-4-end-december.csv#unit/float",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "float"
+                }
+            ]
+        }
+    ]
+}
