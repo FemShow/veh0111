@@ -1,10 +1,13 @@
 {
   "$schema": "https://purl.org/csv-cubed/qube-config/v1",
-  "title": "All registered vehicles in Great Britain; from 1994 Quarter 4 (end December)",
-  "description": "Vehicles by the number of changes of keeper during the year in the United Kingdom from 2010",
+  "title": "Vehicles by number of changes of keeper during the year, United Kingdom from 2010",
+  "description": "Vehicles by the number of changes of keeper during the year in the United Kingdom from 2010 Note 1; The number of changes of keeper includes those made by vehicle traders and those where the vehicle is not sold. These vehicles may have been licensed, SORN or unlicensed at the time the change of keeper took place, but these figures only include vehicles that were licensed or SORN at some point during the year. Note 2; Includes rear diggers, lift trucks, rollers, ambulances, Hackney Carriages, three wheelers, tricycles and agricultural vehicles. This table has been marked for review. Data are not considered robust and interpretation is uncertain. Please use contact details below to provide your views on the future publication of this table.This table has been marked for review. Data are not considered robust and interpretation is uncertain. Please use contact details below to provide your views on the future publication of this table.",
+  "public_contact_point_uri": "mailto:vehicle_stats@dft.co.uk",
   "creator": "https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency",
   "publisher": "https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency",
   "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "themes": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes",
+  "summary": "Data and statistics of vehicles by about the number of changes of keeper during the year.",
   "keywords": [
     "cars",
     "buses",
@@ -15,107 +18,40 @@
     "motorcycles",
     "licence",
     "license",
-    "licensing"
-  ],
+    "licensing" 
+],
   "columns": {
     "Geography": false,
     "Code": {
       "from_template": "statistical-geography"
     },
     "Date": {
-      "from_template": "government-year"
+      "from_template": "year"
     },
-    "Units": false,
-    "Metric": false,
-    "Cars": {
+    "Units": {
+        "type": "units",
+        "values": [
+            {
+                "label": "Thousands",
+                "from_existing": "http://qudt.org/vocab/unit/NUM",
+                "quantity_kind":"http://qudt.org/vocab/quantitykind/Dimensionless",
+                "scaling_factor":1000
+            }
+        ]
+    },
+    "Metric": {
+        "type": "dimension"
+     },
+    "variable":{
+        "type": "dimension"
+     },
+    "value": {
       "type": "observations",
       "data_type": "float",
       "measure": {
-        "label": "Cars",
-        "description": "The total number of changes of Car keepers during the year",
-        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
-      },
-      "unit": {
-        "label": "float",
-        "from_existing": "http://qudt.org/vocab/unit/NUM"
-      }
-    },
-    "Mcycles": {
-      "type": "observations",
-      "data_type": "float",
-      "measure": {
-        "label": "Mcycles",
-        "description": "The number of changes of motorcycle keepers during the year",
-        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
-      },
-      "unit": {
-        "label": "float",
-        "from_existing": "http://qudt.org/vocab/unit/NUM"
-      }
-    },
-    "LGVs": {
-      "type": "observations",
-      "data_type": "float",
-      "measure": {
-        "label": "LGVs",
-        "description": "The number of changes of LGV keepers during the year",
-        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
-      },
-      "unit": {
-        "label": "float",
-        "from_existing": "http://qudt.org/vocab/unit/NUM"
-      }
-    },
-    "HGVs": {
-      "type": "observations",
-      "data_type": "float",
-      "measure": {
-        "label": "HGVs",
-        "description": "The number of changes of HGV keepers during the year",
-        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
-      },
-      "unit": {
-        "label": "float",
-        "from_existing": "http://qudt.org/vocab/unit/NUM"
-      }
-    },
-    "Bus-n-coach": {
-      "type": "observations",
-      "data_type": "float",
-      "measure": {
-        "label": "Bus-n-coach",
-        "description": "The number of changes of bus and coach keepers during the year",
-        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
-      },
-      "unit": {
-        "label": "float",
-        "from_existing": "http://qudt.org/vocab/unit/NUM"
-      }
-    },
-    "Others": {
-      "type": "observations",
-      "data_type": "float",
-      "measure": {
-        "label": "Others",
-        "description": "The number of changes of other vehicle type keepers during the year",
-        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
-      },
-      "unit": {
-        "label": "float",
-        "from_existing": "http://qudt.org/vocab/unit/NUM"
-      }
-    },
-    "Total": {
-      "type": "observations",
-      "data_type": "float",
-      "measure": {
-        "label": "Total",
-        "description": "Total version by the number of changes of keeper during the year",
-        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
-      },
-      "unit": {
-        "label": "float",
-        "from_existing": "http://qudt.org/vocab/unit/NUM"
+        "label": "value",
+        "description": "Vehicles by number of changes of keeper",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
       }
     }
   }
