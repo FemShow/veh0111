@@ -1,0 +1,8 @@
+Uri Identifier,Label,Notation,Parent Uri Identifier,Sort Priority,Description
+total-changes-of-keeper,Total changes of keeper,total-changes-of-keeper,,0,
+vehicles-with-0-changes,Vehicles with 0 changes,vehicles-with-0-changes,,1,
+vehicles-with-1-changes,Vehicles with 1 changes,vehicles-with-1-changes,,2,
+vehicles-with-2-changes,Vehicles with 2 changes,vehicles-with-2-changes,,3,
+vehicles-with-3-changes,Vehicles with 3 changes,vehicles-with-3-changes,,4,
+vehicles-with-4-changes,Vehicles with 4 changes,vehicles-with-4-changes,,5,
+vehicles-with-over-4-changes,Vehicles with over 4 changes,vehicles-with-over-4-changes,,6,

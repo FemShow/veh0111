@@ -1,0 +1,8 @@
+Uri Identifier,Label,Notation,Parent Uri Identifier,Sort Priority,Description
+bus-n-coach,Bus-n-coach,bus-n-coach,,0,
+cars,Cars,cars,,1,
+hgvs,HGVs,hgvs,,2,
+lgvs,LGVs,lgvs,,3,
+mcycles,Mcycles,mcycles,,4,
+others,Others,others,,5,
+total,Total,total,,6,

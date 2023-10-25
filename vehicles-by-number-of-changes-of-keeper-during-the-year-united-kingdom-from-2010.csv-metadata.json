@@ -1,0 +1,817 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dataset",
+    "tables": [
+        {
+            "url": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "titles": "Geography",
+                        "name": "geography",
+                        "suppressOutput": true
+                    },
+                    {
+                        "titles": "Code",
+                        "name": "code",
+                        "propertyUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/statistical-geography",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+code}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Date",
+                        "name": "date",
+                        "propertyUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/year",
+                        "valueUrl": "year.csv#{+date}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Units",
+                        "name": "units",
+                        "aboutUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#obs/{code},{date},{metric},{variable}@value",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#unit/{+units}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Metric",
+                        "name": "metric",
+                        "propertyUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/metric",
+                        "valueUrl": "metric.csv#{+metric}",
+                        "required": true
+                    },
+                    {
+                        "titles": "variable",
+                        "name": "variable",
+                        "propertyUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/variable",
+                        "valueUrl": "variable.csv#{+variable}",
+                        "required": true
+                    },
+                    {
+                        "titles": "value",
+                        "name": "value",
+                        "aboutUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#obs/{code},{date},{metric},{variable}@value",
+                        "propertyUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#measure/value",
+                        "datatype": "float",
+                        "required": true
+                    },
+                    {
+                        "name": "virt_slice",
+                        "virtual": true,
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Slice"
+                    },
+                    {
+                        "name": "virt_slice_structure",
+                        "virtual": true,
+                        "propertyUrl": "qb:sliceStructure",
+                        "valueUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#slice/cross-measures"
+                    },
+                    {
+                        "name": "virt_obs_value",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#obs/{code},{date},{metric},{variable}@value"
+                    },
+                    {
+                        "name": "virt_obs_value_meas",
+                        "virtual": true,
+                        "aboutUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#obs/{code},{date},{metric},{variable}@value",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#measure/value"
+                    },
+                    {
+                        "name": "virt_dim_value_code",
+                        "virtual": true,
+                        "aboutUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#obs/{code},{date},{metric},{variable}@value",
+                        "propertyUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/statistical-geography",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+code}"
+                    },
+                    {
+                        "name": "virt_dim_value_date",
+                        "virtual": true,
+                        "aboutUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#obs/{code},{date},{metric},{variable}@value",
+                        "propertyUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/year",
+                        "valueUrl": "year.csv#{+date}"
+                    },
+                    {
+                        "name": "virt_dim_value_metric",
+                        "virtual": true,
+                        "aboutUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#obs/{code},{date},{metric},{variable}@value",
+                        "propertyUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/metric",
+                        "valueUrl": "metric.csv#{+metric}"
+                    },
+                    {
+                        "name": "virt_dim_value_variable",
+                        "virtual": true,
+                        "aboutUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#obs/{code},{date},{metric},{variable}@value",
+                        "propertyUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/variable",
+                        "valueUrl": "variable.csv#{+variable}"
+                    },
+                    {
+                        "name": "virt_obs_value_type",
+                        "virtual": true,
+                        "aboutUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#obs/{code},{date},{metric},{variable}@value",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_value",
+                        "virtual": true,
+                        "aboutUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#obs/{code},{date},{metric},{variable}@value",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dataset"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": "date",
+                        "reference": {
+                            "resource": "year.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    },
+                    {
+                        "columnReference": "metric",
+                        "reference": {
+                            "resource": "metric.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    },
+                    {
+                        "columnReference": "variable",
+                        "reference": {
+                            "resource": "variable.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "code",
+                    "date",
+                    "metric",
+                    "variable"
+                ],
+                "aboutUrl": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#slice/{code},{date},{metric},{variable}"
+            }
+        },
+        {
+            "url": "year.csv",
+            "tableSchema": "year.table.json",
+            "suppressOutput": true
+        },
+        {
+            "url": "metric.csv",
+            "tableSchema": "metric.table.json",
+            "suppressOutput": true
+        },
+        {
+            "url": "variable.csv",
+            "tableSchema": "variable.table.json",
+            "suppressOutput": true
+        }
+    ],
+    "rdfs:seeAlso": [
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#class/variable",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/variable",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/variable"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/variable"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 5
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/units",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": true
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 3
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dataset",
+            "@type": [
+                "http://purl.org/linked-data/cube#DataSet",
+                "http://www.w3.org/ns/dcat#Resource",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/ns/dcat#Dataset",
+                "http://purl.org/linked-data/cube#Attachable"
+            ],
+            "http://purl.org/dc/terms/creator": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency"
+                }
+            ],
+            "http://purl.org/dc/terms/description": [
+                {
+                    "@type": "https://www.w3.org/ns/iana/media-types/text/markdown#Resource",
+                    "@value": "Vehicles by the number of changes of keeper during the year in the United Kingdom from 2010 Note 1; The number of changes of keeper includes those made by vehicle traders and those where the vehicle is not sold. These vehicles may have been licensed, SORN or unlicensed at the time the change of keeper took place, but these figures only include vehicles that were licensed or SORN at some point during the year. Note 2; Includes rear diggers, lift trucks, rollers, ambulances, Hackney Carriages, three wheelers, tricycles and agricultural vehicles. This table has been marked for review. Data are not considered robust and interpretation is uncertain. Please use contact details below to provide your views on the future publication of this table.This table has been marked for review. Data are not considered robust and interpretation is uncertain. Please use contact details below to provide your views on the future publication of this table."
+                }
+            ],
+            "http://purl.org/dc/terms/identifier": [
+                {
+                    "@value": "Vehicles by number of changes of keeper during the year, United Kingdom from 2010"
+                }
+            ],
+            "http://purl.org/dc/terms/issued": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-10-25T14:54:08.999162"
+                }
+            ],
+            "http://purl.org/dc/terms/license": [
+                {
+                    "@id": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                }
+            ],
+            "http://purl.org/dc/terms/modified": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-10-25T14:54:08.999162"
+                }
+            ],
+            "http://purl.org/dc/terms/publisher": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency"
+                }
+            ],
+            "http://purl.org/dc/terms/title": [
+                {
+                    "@language": "en",
+                    "@value": "Vehicles by number of changes of keeper during the year, United Kingdom from 2010"
+                }
+            ],
+            "http://purl.org/linked-data/cube#structure": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#structure"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Data and statistics of vehicles by about the number of changes of keeper during the year."
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Vehicles by number of changes of keeper during the year, United Kingdom from 2010"
+                }
+            ],
+            "http://www.w3.org/ns/dcat#keyword": [
+                {
+                    "@language": "en",
+                    "@value": "cars"
+                },
+                {
+                    "@language": "en",
+                    "@value": "buses"
+                },
+                {
+                    "@language": "en",
+                    "@value": "vans"
+                },
+                {
+                    "@language": "en",
+                    "@value": "licence"
+                },
+                {
+                    "@language": "en",
+                    "@value": "coaches"
+                },
+                {
+                    "@language": "en",
+                    "@value": "coach"
+                },
+                {
+                    "@language": "en",
+                    "@value": "lorries"
+                },
+                {
+                    "@language": "en",
+                    "@value": "licensing"
+                },
+                {
+                    "@language": "en",
+                    "@value": "motorcycles"
+                },
+                {
+                    "@language": "en",
+                    "@value": "license"
+                }
+            ],
+            "http://www.w3.org/ns/dcat#theme": [
+                {
+                    "@id": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes"
+                }
+            ],
+            "http://www.w3.org/ns/prov#wasGeneratedBy": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#csvcubed-build-activity"
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/year",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 2
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/year",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "year.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#class/year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#structure",
+            "@type": [
+                "http://purl.org/linked-data/cube#DataStructureDefinition",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#component": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/value"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/metric"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/units"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/variable"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/measure-type"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/statistical-geography"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/metric"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/variable"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#measure/value"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/statistical-geography"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/year"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#sliceKey": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#slice/cross-measures"
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#class/year",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/statistical-geography",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Statistical Geography"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#class/statistical-geography"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/measure-type",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 6
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/metric",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "metric.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Metric"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#class/metric"
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#csvcubed-build-activity",
+            "@type": [
+                "http://www.w3.org/ns/prov#Activity",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/ns/prov#used": [
+                {
+                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.4.4"
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/value",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#measure/value"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#measure/value"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 7
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#class/metric",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/variable",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "variable.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "variable"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#class/variable"
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#class/statistical-geography",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#measure/value",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Vehicles by number of changes of keeper"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "value"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#float"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#slice/cross-measures",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#SliceKey",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/statistical-geography"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/variable"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/year"
+                },
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/metric"
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/metric",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/metric"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/metric"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 4
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#component/statistical-geography",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/statistical-geography"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dimension/statistical-geography"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 1
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dependency/year",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./year.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "year.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dependency/metric",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./metric.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "metric.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#dependency/variable",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./variable.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "variable.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "vehicles-by-number-of-changes-of-keeper-during-the-year-united-kingdom-from-2010.csv#unit/thousands",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://qudt.org/schema/qudt/hasQuantityKind": [
+                {
+                    "@id": "http://qudt.org/vocab/quantitykind/Dimensionless"
+                }
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1000.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Thousands"
+                }
+            ]
+        }
+    ]
+}
